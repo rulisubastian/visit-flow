@@ -9,7 +9,7 @@ Aplikasi ini menerapkan autentikasi berbasis token (**Laravel Sanctum**) sehingg
 - **Password:** `password123`
 
 ## 2. Pemilihan Tech Stack & Library
-1. **Backend — Laravel 11 & Laravel Sanctum:** Arsitektur MVC yang terstruktur, Eloquent ORM untuk filter multi-parameter yang aman, validasi request bawaan (`422 Unprocessable Entity`), serta Laravel Sanctum untuk autentikasi API token.
+1. **Backend — Laravel 13.42.0 & Laravel Sanctum:** Arsitektur MVC yang terstruktur, Eloquent ORM untuk filter multi-parameter yang aman, validasi request bawaan (`422 Unprocessable Entity`), serta Laravel Sanctum untuk autentikasi API token.
 2. **Database — PostgreSQL:** Database relasional yang kuat untuk menjaga konsistensi tipe data, tanggal kunjungan, dan constraint keunikan entitas.
 3. **Frontend — React.js (Vite), Axios, & Tailwind CSS:** Pengelolaan state UI reaktif dengan komponen terpisah untuk kombinasi filter, *loading state*, *error state*, dan *empty state*, serta Axios interceptor untuk token Bearer otomatis.
 
@@ -41,7 +41,7 @@ Lalu jalankan migrasi, seeder data fiktif, dan server API:
 php artisan migrate --seed
 php artisan serve
 ```
-Backend akan berjalan di `http://127.0.0.1:8000`.
+Backend akan berjalan di `http://127.0.0.1:8000/api`.
 
 ### B. Menjalankan Frontend (React.js)
 Buka terminal baru:
